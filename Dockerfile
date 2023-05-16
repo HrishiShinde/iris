@@ -1,10 +1,8 @@
-FROM python
+FROM python 
 
-WORKDIR /proj1
+WORKDIR /newapp
 
-COPY . /proj1/
-
-EXPOSE 8501
+COPY . /newapp
 
 RUN pip install -r requirements.txt
 
